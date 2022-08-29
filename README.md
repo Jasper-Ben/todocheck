@@ -81,6 +81,19 @@ Optionally verify the `sha256` checksum:
 Place the binary in a folder, shined upon by your `$PATH`.
  * For macos & linux, that's typically `/usr/local/bin/`
 
+## Using a Container
+Alternatively to installing the todocheck binary on your system you may use prebuilt container images from the master branch, e.g.:
+
+```bash
+docker run -it ghcr.io/preslavmihaylov/todocheck/todocheck:latest
+```
+
+or:
+
+```bash
+docker run -it ghcr.io/preslavmihaylov/todocheck/todocheck:<GIT_COMMIT_SHA>
+```
+
 # Quickstart
 First, you need to configure `todocheck`'s integration with your issue tracker.
 This is done by creating a `.todocheck.yaml` file in the root of your project.
