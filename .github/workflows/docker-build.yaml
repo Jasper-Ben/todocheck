@@ -46,4 +46,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            version=${{ fromJSON(steps.meta.outputs.json).tags[*] }}
+            version=${{ fromJSON(steps.meta.outputs.json).tags[1] }}
